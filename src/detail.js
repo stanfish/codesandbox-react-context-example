@@ -1,6 +1,6 @@
 import React from "react";
-//import { withContext } from "./appstore/context";
-export const NoCloseClassName = "no_close";
+import { withContext } from "./appstore/context";
+const NoCloseClassName = "no_close";
 class Detail extends React.Component {
   componentDidMount() {
     document.addEventListener("click", this.handleClick);
@@ -34,8 +34,6 @@ class Detail extends React.Component {
           Detail
           <button
             onClick={e => {
-              //e.preventDefault();
-              // this part I don't like, such a long address to the function
               this.closeMe();
             }}
           >
@@ -50,9 +48,4 @@ class Detail extends React.Component {
   }
 }
 
-// Wrap the component in the context so that we have
-// access to the state and actions.
-// Written this way, this is all we have to do to give
-// this component access to the global app state
-// and actions
-export default Detail;
+module.exports = { Detail: withContext(Detail), NoCloseClassName };

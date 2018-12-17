@@ -31,7 +31,7 @@ function bindActions(container) {
 
 function initState() {
   let state = {
-    rows: ["row1", "row2", "row3", "row4", "row5"]
+    rows: ["1111", "2222", "3333", "4444", "5555"]
   };
 
   return state;

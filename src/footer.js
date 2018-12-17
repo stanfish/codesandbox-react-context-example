@@ -1,5 +1,5 @@
 import React from "react";
-//import { withContext } from "./appstore/context";
+import { withContext } from "./appstore/context";
 
 class Footer extends React.Component {
   render() {
@@ -18,9 +18,4 @@ class Footer extends React.Component {
   }
 }
 
-// Wrap the component in the context so that we have
-// access to the state and actions.
-// Written this way, this is all we have to do to give
-// this component access to the global app state
-// and actions
-module.exports = Footer;
+module.exports = { Footer: withContext(Footer) };

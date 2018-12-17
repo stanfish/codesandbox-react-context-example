@@ -12,8 +12,6 @@ class List extends React.Component {
               {member}
               <button
                 onClick={e => {
-                  //e.preventDefault();
-                  // this part I don't like, such a long address to the function
                   this.props.g_state.actions.removeRow(member);
                 }}
               >
@@ -22,8 +20,6 @@ class List extends React.Component {
               <button
                 className={NoCloseClassName}
                 onClick={e => {
-                  //e.preventDefault();
-                  // this part I don't like, such a long address to the function
                   this.props.g_state.actions.setDetail(member);
                 }}
               >
@@ -37,11 +33,4 @@ class List extends React.Component {
   }
 }
 
-// Wrap the component in the context so that we have
-// access to the state and actions.
-// Written this way, this is all we have to do to give
-// this component access to the global app state
-// and actions
-export default List;
-
-//module.exports = withContext(List);
+module.exports = { List: withContext(List) };
