@@ -32,4 +32,6 @@ class AddRow extends React.Component {
   }
 }
 
-module.exports = { AddRow: withContext(AddRow) };
+export default withContext(AddRow);
+
+//module.exports = { AddRow: withContext(AddRow) };

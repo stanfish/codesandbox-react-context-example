@@ -18,4 +18,6 @@ class Footer extends React.Component {
   }
 }
 
-module.exports = { Footer: withContext(Footer) };
+export default withContext(Footer);
+
+// module.exports = { Footer: withContext(Footer) };

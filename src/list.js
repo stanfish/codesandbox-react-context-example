@@ -33,4 +33,7 @@ class List extends React.Component {
   }
 }
 
-module.exports = { List: withContext(List) };
+export default withContext(List);
+
+
+// module.exports = { List: withContext(List) };

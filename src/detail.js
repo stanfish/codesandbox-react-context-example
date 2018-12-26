@@ -1,6 +1,6 @@
 import React from "react";
 import { withContext } from "./appstore/context";
-const NoCloseClassName = "no_close";
+export  const NoCloseClassName = "no_close";
 class Detail extends React.Component {
   componentDidMount() {
     document.addEventListener("click", this.handleClick);
@@ -48,4 +48,6 @@ class Detail extends React.Component {
   }
 }
 
-module.exports = { Detail: withContext(Detail), NoCloseClassName };
+export default withContext(Detail);
+
+// module.exports = { Detail: withContext(Detail), NoCloseClassName };

@@ -1,10 +1,10 @@
 import React from "react";
 import { Context, withContext } from "./appstore/context";
 import { InitState, RegisterActions } from "./appstore/actions";
-import { List } from "./list";
-import { AddRow } from "./addrow";
-import { Footer } from "./footer";
-import { Detail } from "./detail";
+import List from "./list";
+import AddRow from "./addrow";
+import Footer from "./footer";
+import Detail from "./detail";
 
 class App extends React.Component {
   constructor(props) {
