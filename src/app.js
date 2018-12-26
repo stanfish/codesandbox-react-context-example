@@ -1,5 +1,5 @@
 import React from "react";
-import { Context, withContext } from "./appstore/context";
+import { Context } from "./appstore/context";
 import { InitState, RegisterActions } from "./appstore/actions";
 import List from "./list";
 import AddRow from "./addrow";
